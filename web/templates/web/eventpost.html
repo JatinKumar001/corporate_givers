@@ -1,0 +1,60 @@
+{% extends 'web/basic.html'%}
+
+{% block title %} Event post {% endblock %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css_style/eventpost.css'%}">
+{% endblock %}
+{% block body %}
+<div class="event-items">
+    <p class="post-desc">Post Event Detail</p>
+    <div class="container1">
+        <div class="left">
+            <div class="imgbox">
+                <div id="display-image"></div>
+                <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
+            </div>
+            <div class="info">
+                <div class="title-desc">
+                    <p class="title">Title</p>
+                    <input type="text">
+                    <p class="descpara">Description</p>
+                    <input class="desc" type="text">
+                </div>
+                <div class="status">
+                    <select id="myList">
+                        <option>status</option>
+                        <option> Online </option>
+                        <option> In-Person </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="event-time">
+                <p>Event date</p>
+                <input type="datetime-local" id="eventtime" name="eventtime">
+            </div>
+            <div class="buttons">
+                <button class="registration">Post Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script>
+    const image_input = document.querySelector("#image-input");
+
+    image_input.addEventListener("change", function () {
+        const reader = new FileReader();
+        reader.addEventListener("load", () => {
+            const uploaded_image = reader.result;
+            document.querySelector("#display-image").style.backgroundImage = `url(${uploaded_image})`;
+        });
+        reader.readAsDataURL(this.files[0]);
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends 'web/basic.html'%}
+
+{% block title %} Humanity Hack {% endblock %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css_style/services.css'%}">
+{% endblock %}
+{% block body %}
+<div class="header">
+    <div id="title"> Services </div>
+    <div id="subtitle"> Below are some of the services we provide upon subscription</div>
+</div>
+
+<div class="body-bar">
+
+    <div class="side-bar">
+        <div id="join">JOIN US TODAY</div>
+        <img id="join-image" src="https://i.pinimg.com/736x/4b/fb/00/4bfb0087aa33d8b5bb3b9c22dafdce2b.jpg">
+        <button type="button">Click Here</button>
+
+    </div>
+
+    <div class="box-bar">
+
+        <div class="serv_box">
+            <div class="categories">
+                <div class="cat-title">Find Events</div>
+                <a href="/event"><img class="cat-image"
+                    src="https://www.usnews.com/object/image/00000154-1b17-d75e-a95c-3b5fd4140000/160415-seniorvolunteer-stock.jpg?update-time=1460743489614&size=responsive640"></img></a>
+                <div class="text">
+                    Employees are able to choose from a list of charitable events and book themselves into the event
+                </div>
+
+            </div>
+            <div class="categories">
+                <div class="cat-title">Profiles</div>
+                <img class="cat-image"
+                    src="https://media.istockphoto.com/photos/multi-ethnic-guys-and-girls-taking-selfie-outdoors-with-backlight-picture-id1368965646?b=1&k=20&m=1368965646&s=170667a&w=0&h=9DO-7OKgwO8q7pzwNIb3aq2urlw3DNTmpKQyvvNDWgY="></img>
+                <div class="text">
+                    Profile help match recommended opportunities to companies. This would customize the volunteering
+                    experience for each group
+                </div>
+            </div>
+            <div class="categories">
+                <div class="cat-title">Chat Forum</div>
+                <img class="cat-image"
+                    src="https://englishlive.ef.com/blog/wp-content/uploads/sites/2/2015/05/english-for-chatting.jpg"></img>
+                <div class="text">
+                    Once an employee books an event, they are then able to chat to other event attendees in a chat room
+                </div>
+            </div>
+            <div class="categories">
+                <div class="cat-title">Membership Benefits</div>
+                <img class="cat-image"
+                    src="https://media.istockphoto.com/photos/hugging-afro-people-yellow-background-picture-id1335688759?b=1&k=20&m=1335688759&s=170667a&w=0&h=5n_Zmz1D5NALfRh0YE2ziTaEyua8td3nNmpdmGK1RtA="></img>
+                <div class="text">
+                    From press coverage and ads to plans catered towards your company goals and values, subscribing to
+                    our platform provides a time-saving way to participate in civic engagement
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

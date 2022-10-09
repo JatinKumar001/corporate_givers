@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container2{
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.5px 0.5px 10px rgb(156 211 220);
+    margin-left: 240px;
+    margin-top: 100px;
+    height: 500px;
+}
+
+.headings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.heading{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 18px;
+}
+
+.input-section{
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.name{
+    border: none;
+    border-bottom: solid grey;
+    margin-bottom: 15px;
+    font-family: cursive;
+    font-size: 16px;
+    height: 30px;
+}
+
+.name:focus{
+    outline: none;
+}
+
+#message{
+    border: 2px solid rgb(132, 127, 127);
+    margin-bottom: 15px;
+    font-family: cursive;
+    font-size: 16px;
+    color: gray;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.submit-btn{
+    width: 116px;
+    height: 38px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(21, 172, 206);
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    background-color: rgb(20, 147, 175);
+    transition: 0.6s;
+}
+
+.images img{
+    position: absolute;
+    top: 150px;
+    right: 178px;
+}

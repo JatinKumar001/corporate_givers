@@ -1,0 +1,138 @@
+{% extends 'web/basic.html'%}
+
+{% block title %} Event Page {% endblock %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css_style/eventpost.css'%}">
+<link rel="stylesheet" href="{% static 'css_style/event-page.css'%}">
+{% endblock %}
+{% block body %}
+<div class="event-container">
+    <div class="top-img">
+        <img src="{% static 'img/events-image_orig.png' %}" alt="">
+        <!-- <p class="title">Events</p> -->
+    </div>
+    <div class="postbutton">
+        <a href="/eventpost"><button class="btn-post">Post Event</button></a>
+        <a href="/"><button class="btn-post">Explore website</button></a>
+    </div>
+    <div class="active_event">
+        <p class="active">Active Events</p>
+        <div class="event-items">
+            <div class="container1">
+                <div class="left">
+                    <div class="imgbox">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="title-desc">
+                            <p class="title">Title1</p>
+                            <p class="descpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                                dolores corporis optio maxime, consectetur dolor quam deserunt</p>
+                        </div>
+                        <div class="status">
+                            <select id="myList">
+                                <option>Online</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="event-time">
+                        <p>Event date</p>
+                        <p>09/11/2022</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="registration">Register Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="left">
+                    <div class="imgbox">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="title-desc">
+                            <p class="title">Title2</p>
+                            <p class="descpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                                dolores corporis optio maxime, consectetur dolor quam deserunt</p>
+                        </div>
+                        <div class="status">
+                            <select id="myList">
+                                <option>Online</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="event-time">
+                        <p>Event date</p>
+                        <p>09/11/2022</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="registration">Register Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="left">
+                    <div class="imgbox">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="title-desc">
+                            <p class="title">Title3</p>
+                            <p class="descpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                                dolores corporis optio maxime, consectetur dolor quam deserunt</p>
+                        </div>
+                        <div class="status">
+                            <select id="myList">
+                                <option>Online</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="event-time">
+                        <p>Event date</p>
+                        <p>09/11/2022</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="registration">Register Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="left">
+                    <div class="imgbox">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="title-desc">
+                            <p class="title">Title4</p>
+                            <p class="descpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                                dolores corporis optio maxime, consectetur dolor quam deserunt</p>
+                        </div>
+                        <div class="status">
+                            <select id="myList">
+                                <option>Online</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="event-time">
+                        <p>Event date</p>
+                        <p>09/11/2022</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="registration">Register Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
